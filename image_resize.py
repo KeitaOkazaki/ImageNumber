@@ -16,8 +16,8 @@ def resize_image_with_aspect_ratio(input_image_path, output_image_path, max_size
         print(f"Image resized from {original_size} to {resized_size} and saved to {output_image_path}")
 
 # Example usage
-input_image_path = "/Users/okazakikeita/Desktop/imageNumber/images/img.png"
-output_image_path = "/Users/okazakikeita/Desktop/imageNumber/resize_image/resize_image.png"
+input_image_path = "./images/img.png"
+output_image_path = "./resize_image/resize_image.png"
 max_size = (1000, 800)  # Example maximum size
 
 resize_image_with_aspect_ratio(input_image_path, output_image_path, max_size)

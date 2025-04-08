@@ -47,10 +47,10 @@ if __name__ == "__main__":
     root = tk.Tk()
     
     # 編集したい画像のpathを入力
-    app = ImageApp(root, "/Users/okazakikeita/Desktop/imageNumber/resize_image/resize_image.png")
+    app = ImageApp(root, "./resize_image/resize_image.png")
     
     def on_closing():
-        output_path = "/Users/okazakikeita/Desktop/imageNumber/output_images/output_image.png"
+        output_path = "./output_images/output_image.png"
         app.save_image(output_path)
         img = Image.open(output_path)
         root.destroy()
